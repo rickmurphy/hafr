@@ -1,0 +1,25 @@
+rick@metho-laptop:~/haskell/json$ sh run.sh
+5
+     845,248,256 bytes allocated in the heap
+      43,576,576 bytes copied during GC
+       9,978,320 bytes maximum residency (4 sample(s))
+         692,448 bytes maximum slop
+              45 MB total memory in use (13 MB lost due to fragmentation)
+
+                                    Tot time (elapsed)  Avg pause  Max pause
+  Gen  0        89 colls,     0 par    0.09s    0.07s     0.0008s    0.0116s
+  Gen  1         4 colls,     0 par    0.03s    0.03s     0.0078s    0.0139s
+
+  INIT    time    0.00s  (  0.00s elapsed)
+  MUT     time    5.26s  (  5.30s elapsed)
+  GC      time    0.12s  (  0.10s elapsed)
+  EXIT    time    0.00s  (  0.00s elapsed)
+  Total   time    5.39s  (  5.40s elapsed)
+
+  %GC     time       2.2%  (1.9% elapsed)
+
+  Alloc rate    160,388,663 bytes per MUT second
+
+  Productivity  97.8% of total user, 97.5% of total elapsed
+
+rick@metho-laptop:~/haskell/json$ 

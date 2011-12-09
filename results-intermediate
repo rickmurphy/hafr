@@ -1,0 +1,143 @@
+rick@metho-laptop:~/haskell/json$ sh run.sh
+
+Acovea 5.1.1 (compiled Nov  9 2006 13:15:52)
+Evolving Better Software
+
+Invented by Scott Robert Ladd         (scott.ladd@coyotegulch.com)
+            Coyote Gulch Productions  (http://www.coyotegulch.com)
+
+   test application: Main.hs
+        test system: metho-laptop
+ config description: ghc 7.2.x + (x86_64) (version )
+ test configuration: a-config
+     acovea version: 5.1.1
+    evocosm version: 3.1.0
+application version: /usr/local/bin/ghc 7.2.1
+
+   # of populations: 4
+    population size: 4
+      survival rate: 10% (0)
+     migration rate: 5% (0)
+      mutation rate: 1%
+     crossover rate: 100%
+    fitness scaling: sigma
+ generations to run: 4
+ random number seed: 1405368966
+       testing mode: speed
+
+    test start time: 2011 Dec 07 13:26:22
+
+
+------------------------------------------------------------
+generation 1 begins
+
+population  1: .^CCommand terminated by signal 2
+15.76user 0.56system 0:23.32elapsed 69%CPU (0avgtext+0avgdata 906432maxresident)k
+0inputs+56840outputs (0major+162463minor)pagefaults 0swaps
+
+rick@metho-laptop:~/haskell/json$ ^C
+rick@metho-laptop:~/haskell/json$ sh run.sh
+
+Acovea 5.1.1 (compiled Nov  9 2006 13:15:52)
+Evolving Better Software
+
+Invented by Scott Robert Ladd         (scott.ladd@coyotegulch.com)
+            Coyote Gulch Productions  (http://www.coyotegulch.com)
+
+   test application: Main.hs
+        test system: metho-laptop
+ config description: ghc 7.2.x + (x86_64) (version )
+ test configuration: a-config
+     acovea version: 5.1.1
+    evocosm version: 3.1.0
+application version: /usr/local/bin/ghc 7.2.1
+
+   # of populations: 4
+    population size: 8
+      survival rate: 10% (1)
+     migration rate: 5% (0)
+      mutation rate: 1%
+     crossover rate: 100%
+    fitness scaling: sigma
+ generations to run: 4
+ random number seed: 781020418
+       testing mode: speed
+
+    test start time: 2011 Dec 07 13:27:22
+
+
+------------------------------------------------------------
+generation 1 begins
+
+population  1: ........
+population  2: ........
+population  3: ........
+population  4: ........
+
+generation 1 complete, average fitness: 5.46875
+------------------------------------------------------------
+generation 2 begins
+
+population  1: ...{-# INLINE key_function #-}.....
+population  2: ........
+population  3: ........
+population  4: ........
+
+generation 2 complete, average fitness: 5.5625
+------------------------------------------------------------
+generation 3 begins
+
+population  1: ........
+population  2: ........
+population  3: ........
+population  4: ........
+
+generation 3 complete, average fitness: 5.375
+------------------------------------------------------------
+generation 4 begins
+
+population  1: ........
+population  2: ........
+population  3: ........
+population  4: ........
+
+generation 4 complete, average fitness: 5.46875
+
+on the commandline:
+    Warning: The -fvia-C flag does nothing; it will be removed in a future GHC release
+
+Acovea completed its analysis at 2011 Dec 07 13:58:55
+
+Optimistic options:
+
+                                -optc-03  (1.509)
+
+Pessimistic options:
+
+                                -optc-02  (-1.686)
+
+Acovea's Best-of-the-Best:
+/usr/local/bin/ghc -v0 --make -fforce-recomp -Odph -O2 -funbox-strict-fields -fllvm -fasm -optc-O1 -optc-03 -o /tmp/ACOVEA82DC26CA Main.hs 
+
+Acovea's Common Options:
+/usr/local/bin/ghc -v0 --make -fforce-recomp -Odph -O2 -funbox-strict-fields -fllvm -optc-03 -o /tmp/ACOVEA22D1882B Main.hs 
+
+-optlo-O3 -optlc-O3:
+/usr/local/bin/ghc -v0 --make -fforce-recomp -O2 -funbox-strict-fields -fvia-C -optlo-O3 -optlc-O3 -o /tmp/ACOVEAC1F8F659 Main.hs 
+
+-fasm:
+/usr/local/bin/ghc -v0 --make -fforce-recomp -Odph -O2 -funbox-strict-fields -fasm -o /tmp/ACOVEA3C52B7B9 Main.hs 
+
+
+A relative graph of fitnesses:
+
+     Acovea's Best-of-the-Best: **************************************************    (6)
+       Acovea's Common Options: *****************************************             (5)
+           -optlo-O3 -optlc-O3: **************************************************    (6)
+                         -fasm: **************************************************    (6)
+
+Acovea is done.
+
+1815.46user 55.46system 31:33.73elapsed 98%CPU (0avgtext+0avgdata 908352maxresident)k
+0inputs+6210600outputs (0major+19351692minor)pagefaults 0swaps
+rick@metho-laptop:~/haskell/json$ {-# INLINE key_function #-}

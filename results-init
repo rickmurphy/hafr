@@ -1,0 +1,131 @@
+rick@metho-laptop:~/haskell/json$ sh run.sh
+
+Acovea 5.1.1 (compiled Nov  9 2006 13:15:52)
+Evolving Better Software
+
+Invented by Scott Robert Ladd         (scott.ladd@coyotegulch.com)
+            Coyote Gulch Productions  (http://www.coyotegulch.com)
+
+   test application: Main.hs
+        test system: metho-laptop
+ config description: ghc 7.2.x + (x86_64) (version )
+ test configuration: a-config
+     acovea version: 5.1.1
+    evocosm version: 3.1.0
+application version: /usr/local/bin/ghc 7.2.1
+
+   # of populations: 6
+    population size: 6
+      survival rate: 10% (1)
+     migration rate: 5% (0)
+      mutation rate: 1%
+     crossover rate: 100%
+    fitness scaling: sigma
+ generations to run: 6
+ random number seed: 4177684741
+       testing mode: speed
+
+    test start time: 2011 Dec 07 11:35:44
+
+
+------------------------------------------------------------
+generation 1 begins
+
+population  1: ......
+population  2: ......
+population  3: ......
+population  4: ......
+population  5: ......
+population  6: ......
+
+generation 1 complete, average fitness: 10.3056
+------------------------------------------------------------
+generation 2 begins
+
+population  1: ......
+population  2: ......
+population  3: ......
+population  4: ......
+population  5: ......
+population  6: ......
+
+generation 2 complete, average fitness: 10.3056
+------------------------------------------------------------
+generation 3 begins
+
+population  1: ......
+population  2: ......
+population  3: ......
+population  4: ......
+population  5: ......
+population  6: ......
+
+generation 3 complete, average fitness: 10.3333
+------------------------------------------------------------
+generation 4 begins
+
+population  1: ......
+population  2: ......
+population  3: ......
+population  4: ......
+population  5: ......
+population  6: ......
+
+generation 4 complete, average fitness: 10.1111
+------------------------------------------------------------
+generation 5 begins
+
+population  1: ......
+population  2: ......
+population  3: ......
+population  4: ......
+population  5: ......
+population  6: ......
+
+generation 5 complete, average fitness: 10.25
+------------------------------------------------------------
+generation 6 begins
+
+population  1: ......
+population  2: ......
+population  3: ......
+population  4: ......
+population  5: ......
+population  6: ......
+
+generation 6 complete, average fitness: 10.5278
+
+Acovea completed its analysis at 2011 Dec 07 12:43:24
+
+Optimistic options:
+
+                                -optc-02  (1.769)
+
+Pessimistic options:
+
+        none
+
+Acovea's Best-of-the-Best:
+/usr/local/bin/ghc -v0 --make -fforce-recomp -Odph -O2 -funbox-strict-fields -fllvm -fasm -optc-02 -o /tmp/ACOVEAFB8E526B Main.hs 
+
+Acovea's Common Options:
+/usr/local/bin/ghc -v0 --make -fforce-recomp -Odph -O2 -funbox-strict-fields -fllvm -o /tmp/ACOVEA0F1804C9 Main.hs 
+
+-optlo-O3 -optlc-O3:
+/usr/local/bin/ghc -v0 --make -fforce-recomp -O2 -funbox-strict-fields -fllvm -optlo-O3 -optlc-O3 -o /tmp/ACOVEA8EA198DA Main.hs 
+
+-fasm:
+/usr/local/bin/ghc -v0 --make -fforce-recomp -Odph -O2 -funbox-strict-fields -fasm -o /tmp/ACOVEA942B14FB Main.hs 
+
+
+A relative graph of fitnesses:
+
+     Acovea's Best-of-the-Best: **************************************************    (12)
+       Acovea's Common Options: *****************************************             (10)
+           -optlo-O3 -optlc-O3: *********************************************         (11)
+                         -fasm: *********************************************         (11)
+
+Acovea is done.
+
+3927.63user 92.45system 1:07:41elapsed 98%CPU (0avgtext+0avgdata 908320maxresident)k
+0inputs+9362928outputs (0major+30998505minor)pagefaults 0swaps

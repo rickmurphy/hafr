@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://gist.github.com/1260578 -->
+<acovea_config>
+    <acovea version="5.1"/>
+    <description value="ghc 7.2.x + (x86_64)" version=""/>
+    <get_version value="ghc --numeric-version"/>
+    <quoted_options value="false"/>
+
+    <prime command="/usr/local/bin/ghc" flags="-v0 --make -fforce-recomp -Odph -O2 -funbox-strict-fields -fllvm ACOVEA_OPTIONS -o ACOVEA_OUTPUT ACOVEA_INPUT"/>
+
+    <baseline description="-optlo-O3 -optlc-O3" command="/usr/local/bin/ghc" flags="-v0 --make -fforce-recomp -O2 -funbox-strict-fields -fvia-C -optlo-O3 -optlc-O3 -o ACOVEA_OUTPUT ACOVEA_INPUT"/>
+
+    <baseline description="-fasm" command="/usr/local/bin/ghc" flags="-v0 --make -fforce-recomp -Odph -O2 -funbox-strict-fields -fasm -o ACOVEA_OUTPUT ACOVEA_INPUT"/>
+
+    <!-- A list of flags that will be "evolved" by ACOVEA -->
+    <flags>
+      <flag type="simple" value="-optlo-mem2reg" /> 
+      <flag type="simple" value="-O"/>
+      <flag type="simple" value="-O2"/>
+      <flag type="simple" value="-fasm"/>
+      <flag type="simple" value="-optc-O1"/>
+      <flag type="simple" value="-optc-02"/>
+      <flag type="simple" value="-optc-03"/>
+      <flag type="simple" value="-fexcess-precision"/>
+    </flags>
+
+</acovea_config>
